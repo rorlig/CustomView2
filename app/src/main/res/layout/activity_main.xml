@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.example.customview2.EmojiView
+        android:id="@+id/happyButton"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:borderColor="@android:color/white"
+        app:eyesColor="@android:color/black"
+        app:faceColor="@android:color/holo_red_dark"
+        app:mouthColor="@android:color/white"
+        app:state="happy" />
+
+    <com.example.customview2.EmojiView
+        android:id="@+id/sadButton"
+        android:layout_width="@dimen/face_button_dimen"
+        android:layout_height="@dimen/face_button_dimen"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:borderColor="@android:color/white"
+        app:eyesColor="@android:color/black"
+        app:faceColor="@android:color/holo_blue_bright"
+        app:mouthColor="@android:color/white"
+        app:state="sad" />
+
+</RelativeLayout>
